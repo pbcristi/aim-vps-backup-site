@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the personal-use AIM VPS Backup Google Drive integration.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Privacy Policy | AIM VPS Backup</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <a class="wordmark" href="./">AIM VPS Backup</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./">Overview</a>
+        <a href="./privacy.html" aria-current="page">Privacy policy</a>
+        <a href="https://github.com/pbcristi/aim-vps-backup-site">Source and contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">Privacy and data handling</p>
+      <h1>Privacy policy</h1>
+      <p class="lead">AIM VPS Backup is a personal, self-hosted integration used by its operator to store encrypted recovery archives in the operator's Google Drive account.</p>
+      <p class="eyebrow"><strong>Effective date:</strong> October 9, 2026</p>
+    </section>
+    <article class="paper">
+      <h2>1. Who operates this integration</h2>
+      <p>This is a private-use application operated through the GitHub account <a href="https://github.com/pbcristi">pbcristi</a>. It is not a public backup service and does not solicit third-party customer accounts. General questions can be submitted through the <a href="https://github.com/pbcristi/aim-vps-backup-site/issues/new">public repository issue tracker</a>; never include secrets or private financial information in an issue.</p>
+
+      <h2>2. Google data accessed</h2>
+      <p>The application uses Google OAuth 2.0 and requests only the Google Drive API permission <strong><code>https://www.googleapis.com/auth/drive.file</code></strong>. This permits it to create, view, list, download, update and delete files or folders created by the application as needed for backup delivery, verification, retrieval and operator-authorized retention. It does not request full access to unrelated files in the account.</p>
+      <p>Google provides the authorization required to access the operator's selected Drive account. OAuth access and refresh tokens are handled by the private, self-hosted backup client, not by this public website.</p>
+
+      <h2>3. What is transferred and why</h2>
+      <p>The integration is intended to transfer <strong>encrypted backup archives</strong> from the operator's server to Google Drive for disaster recovery. Backup data is encrypted before transmission to Drive; plaintext database records, portfolio information and cryptographic recovery keys are not intentionally uploaded through this workflow. Google Drive may process file metadata such as filenames, sizes, timestamps and API activity as part of its storage service.</p>
+      <p>The integration may read back an encrypted archive to check transfer integrity or assist recovery. It does not use Google Drive data for trading, profiling, advertising, AI training or selling information.</p>
+
+      <h2>4. Storage and security</h2>
+      <p>Encrypted archives reside in the operator's Google Drive account. Backup encryption and key recovery are managed separately from Google Drive. The self-hosted client stores its OAuth configuration on the operator-controlled system, rather than in this GitHub Pages website. As with any cloud account, access also depends on the security of the operator's Google account and connected devices.</p>
+      <p>This website has no sign-in form, does not ask for OAuth tokens or passwords, and does not embed third-party analytics scripts. GitHub Pages, as the website host, and Google, as the API and storage provider, may process ordinary technical logs under their respective policies.</p>
+
+      <h2>5. Sharing and limited use</h2>
+      <p>Google user data is used only to perform the requested backup, verification, recovery and retention operations. The operator does not sell Google user data or disclose it to advertising platforms or unrelated third parties. Access tokens and the contents of the operator's Drive are not displayed on the public website or published in this repository.</p>
+
+      <h2>6. Retention and deletion</h2>
+      <p>Backup archives remain in the operator's Google Drive until they are manually deleted or a retention policy is subsequently configured and enabled. Automated retention is not implied merely by granting OAuth access. The operator can delete uploaded files in Google Drive and can remove local OAuth authorization from the backup client. Deleting a cloud archive does not necessarily remove other independently held recovery copies.</p>
+
+      <h2>7. Revoking Google access</h2>
+      <ol>
+        <li>Visit <a href="https://myaccount.google.com/connections">Google Account connections</a> and find the AIM VPS Backup connection.</li>
+        <li>Remove the application's access to Google Drive.</li>
+        <li>If desired, also delete the encrypted backup files from Google Drive and remove the locally stored rclone authorization.</li>
+      </ol>
+      <p>Revoking authorization stops future access through that authorization; it does not automatically delete archives already saved to Drive.</p>
+
+      <h2>8. Changes</h2>
+      <p>This policy will be updated if the application starts using additional Google permissions or materially changes how backups are handled. The current policy is published at this URL and is linked from the <a href="./">application homepage</a>.</p>
+
+      <h2>9. Contact</h2>
+      <p>For questions about the application's privacy practices, use the <a href="https://github.com/pbcristi/aim-vps-backup-site/issues/new">public GitHub issue tracker</a> without providing sensitive account information.</p>
+    </article>
+  </main>
+  <footer class="footer"><div class="wrap"><span>&copy; 2026 AIM VPS Backup. Personal-use integration.</span><span><a href="./">Homepage</a><a href="https://github.com/pbcristi/aim-vps-backup-site">GitHub</a></span></div></footer>
+</body>
+</html>
