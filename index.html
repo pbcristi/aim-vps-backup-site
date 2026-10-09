@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AIM VPS Backup is a personal-use integration that transfers encrypted recovery snapshots to the owner's Google Drive account.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>AIM VPS Backup | Personal encrypted backup integration</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <a class="wordmark" href="./">AIM VPS Backup</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./">Overview</a>
+        <a href="./privacy.html">Privacy policy</a>
+        <a href="https://github.com/pbcristi/aim-vps-backup-site">Source and contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="wrap hero">
+      <p class="kicker">Personal-use backup integration</p>
+      <h1>Encrypted recovery copies, stored in the owner's Google Drive.</h1>
+      <p class="lead">AIM VPS Backup is a privately operated OAuth integration for transferring encrypted recovery snapshots of AI Investment Manager infrastructure to a Google Drive account controlled by the operator.</p>
+      <div class="buttons">
+        <a class="button" href="./privacy.html">Read the privacy policy</a>
+        <a class="button secondary" href="https://github.com/pbcristi/aim-vps-backup-site">View public information</a>
+      </div>
+    </section>
+    <section class="wrap grid" aria-label="How it works">
+      <article class="tile"><h2>Encrypt first</h2><p>Backup contents are encrypted before cloud upload. Google Drive receives the encrypted archive, not readable database records or recovery keys.</p></article>
+      <article class="tile"><h2>Limited Drive access</h2><p>The integration requests <code>drive.file</code> permission for files and folders that it creates. It does not ask for unrestricted access to the owner's Drive.</p></article>
+      <article class="tile"><h2>Owner controlled</h2><p>Backup creation, upload, recovery, retention, authorization and access revocation remain under the operator's control.</p></article>
+    </section>
+    <section class="wrap paper">
+      <h2>Purpose and availability</h2>
+      <p>This application is used for personal infrastructure recovery. It is not a publicly offered storage service, portfolio manager, brokerage connector, trading service or financial advice product. The public website explains the OAuth application; it does not host or display backup files.</p>
+      <p>Only encrypted backup archives are intended for transfer through this integration. Filenames and ordinary Drive file metadata can still be visible to Google as the storage provider.</p>
+      <div class="note">Google Drive authorization is optional and can be revoked through the Google Account security settings. See the <a href="./privacy.html">privacy policy</a> for access, storage and deletion details.</div>
+      <h2>Contact</h2>
+      <p>For general questions about this private-use integration, <a href="https://github.com/pbcristi/aim-vps-backup-site/issues/new">open an issue in the public information repository</a>. Do not post passwords, OAuth tokens, recovery keys, financial details or other sensitive information in public issues.</p>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap"><span>&copy; 2026 AIM VPS Backup. Personal-use integration.</span><span><a href="./privacy.html">Privacy</a><a href="https://github.com/pbcristi/aim-vps-backup-site">GitHub</a></span></div></footer>
+</body>
+</html>
